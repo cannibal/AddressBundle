@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+				  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+	<entity name="Cannibal\Bundle\AddressBundle\Entity\Address" table="cannibal_addresses">
+		<indexes>
+			<index columns="county,country" name="addresses_county_country_idx"/>
+			<index columns="postcode" name="addresses_postcode_idx"/>
+		</indexes>
+
+		<id name="id" type="integer" column="id">
+			<generator strategy="AUTO"/>
+		</id>
+		<field name="designation" column="designation" type="text"/>
+		<field name="street" column="street" type="text"/>
+		<field name="city" column="city" type="text"/>
+		<field name="county" column="county" type="text"/>
+		<field name="country" column="country" type="text"/>
+		<field name="postCode" column="postcode" type="text"/>
+	</entity>
+</doctrine-mapping>

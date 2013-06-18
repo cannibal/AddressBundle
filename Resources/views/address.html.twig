@@ -1,0 +1,17 @@
+{% macro address(address) %}
+<address>
+    {% set items = [['designation','street'],['county'],['country'],['postcode']] %}
+    {% for item in items %}
+    {{ _self.address_row(item, address) }}
+    {% endfor %}
+</address>
+{% endmacro %}
+
+{% macro address_row(items, address) %}
+
+<span>
+{% for field in items %}
+{{ attribute(address, field) }}
+{% endfor %}
+</span><br/>
+{% endmacro %}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<constraint-mapping xmlns="http://symfony.com/schema/dic/constraint-mapping"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://symfony.com/schema/dic/constraint-mapping http://symfony.com/schema/dic/constraint-mapping/constraint-mapping-1.0.xsd">
+
+    <class name="Cannibal\Bundle\AddressBundle\Entity\Address">
+        <property name="designation">
+            <constraint name="NotBlank"/>
+            <constraint name="MinLength">2</constraint>
+            <constraint name="MaxLength">128</constraint>
+        </property>
+
+        <property name="street">
+            <constraint name="NotBlank"/>
+            <constraint name="MinLength">2</constraint>
+            <constraint name="MaxLength">128</constraint>
+        </property>
+
+        <property name="city">
+            <constraint name="NotBlank"/>
+            <constraint name="MinLength">2</constraint>
+            <constraint name="MaxLength">128</constraint>
+        </property>
+
+        <property name="county">
+            <constraint name="NotBlank"/>
+            <constraint name="MinLength">2</constraint>
+            <constraint name="MaxLength">128</constraint>
+        </property>
+
+        <property name="country">
+            <constraint name="Country"/>
+        </property>
+
+    </class>
+
+</constraint-mapping>
