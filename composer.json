@@ -1,5 +1,7 @@
 {
     "name": "cannibal/address-bundle",
+    "description": "A simple bundle containing some entities for addresses and telephone numbers",
+    "license": "EPL",
     "require": {
         "php": ">=5.3.0"
     },
