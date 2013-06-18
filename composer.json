@@ -13,8 +13,8 @@
     ],
     "autoload":{
         "psr-0":{
-            "Cannibal\\AddressBundle": ""
+            "Cannibal\\Bundle\\AddressBundle": ""
         }
     },
-    "target-dir": "Cannibal/AddressBundle"
+    "target-dir": "Cannibal/Bundle/AddressBundle"
 }
