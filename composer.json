@@ -5,12 +5,6 @@
     "require": {
         "php": ">=5.3.0"
     },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "http://satis.3br"
-        }
-    ],
     "autoload":{
         "psr-0":{
             "Cannibal\\Bundle\\AddressBundle": ""
